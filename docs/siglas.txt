@@ -1,0 +1,3 @@
+GRD = Gerador
+Todos os arquivos que terminam com essas sigla seram Paginas sobre o processo
+de criação do Curriculo do usuario.

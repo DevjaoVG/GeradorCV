@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Gerador</title>
+    <link rel="stylesheet" href="../../styles/grd.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="progresso">
+
+        </div>
+    </header>
+    <main>
+        <form action="" name="contato">
+            <!-- Seção infomações de contato -->
+            <section class="step active"> 
+                <h1>Forneça suas infomações de contato</h1>
+                <h3>Aconcelhamos a inserir Email e Telefone atualizados.</h3>
+                
+                <fieldset>
+                    <div class="conteiner">
+                        <label for="nome">nome</label>
+                        <input type="text" name="nome" > 
+                    </div>
+
+                    <div class="conteiner">
+                        <label for="sobrenome">sobrenome</label>
+                        <input type="text" name="sobrenome" > 
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="conteiner">
+                        <label for="nome">email</label>
+                        <input type="text" name="email" > 
+                    </div>
+
+                    <div class="conteiner">
+                        <label for="sobrenome">telefone</label>
+                        <input type="text" name="telefone" > 
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="conteiner">
+                        <label for="endereco">endereço</label>
+                        <input type="text" name="endereco" > 
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="conteiner">
+                        <label for="cidade">cidade</label>
+                        <input type="text" name="cidade" > 
+                    </div>
+
+                    <div class="conteiner">
+                        <label for="estado">estado</label>
+                        <input type="text" name="estado" > 
+                    </div>
+
+                    <div class="conteiner">
+                        <label for="cep">CEP</label>
+                        <input type="text" name="cep" > 
+                    </div>
+                </fieldset>
+
+                <div class="conteinerbtn">
+                    <button class="next-step" >Continuar</button>
+                </div>
+            </section>
+
+            <!-- Historico profissional -->
+            <section class="step">
+                <h1>Historico profissional</h1>
+
+                <fieldset >
+                    <div class="conteiner">
+                        <label for="cargo">Titulo do cargo</label>
+                        <input type="text" name="cargo" > 
+                    </div>
+
+                    <div class="conteiner">
+                        <label for="empregador">empresa</label>
+                        <input type="text" name="empresa" > 
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="conteiner">
+                        <label for="cidade">cidade</label>
+                        <input type="text" name="cidade" > 
+                    </div>
+
+                    <div class="conteiner">
+                        <label for="estado">estado</label>
+                        <input type="text" name="estado" > 
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="conteiner">
+                        <label for="comeco">começo</label>
+                        <input type="date" name="comeco" > 
+                    </div>
+
+                    <div class="conteiner">
+                        <label for="termino">termino</label>
+                        <input type="date" name="termino" > 
+                    </div>
+                </fieldset>
+
+                <div class="conteinerbtn">
+                    <button class="prev-step" >Voltar</button>
+                    <button class="next-step" >Continuar</button>
+                </div>
+            </section>
+
+            <!-- Formação academica -->
+            <section class="step">
+                <h1>Formação acadêmica</h1>
+
+                <fieldset>
+                    <div class="conteiner">
+                        <label for="instituicao">Instituição de ensino</label>
+                        <input type="text" name="instituicao" > 
+                    </div>
+
+                    <div class="conteiner">
+                        <label for="local">Local da Instituição de ensino</label>
+                        <input type="text" name="local" > 
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="conteiner">
+                        <label for="comeco">situção</label>
+                        <select class="conteiner" name="" id="">
+                            <option value="1" selected disabled>selecione</option>
+                            <option value="2">concluido</option>
+                            <option value="3">formado</option>
+                            <option value="4">cursando</option>
+                        </select>
+                    </div>                  
+                </fieldset>
+
+                <fieldset>
+                    <div class="conteiner">
+                        <label for="comeco">começo</label>
+                        <input type="date" name="comeco" >
+                    </div>
+                    
+                    <div class="conteiner">
+                        <label for="">Conclusão</label>
+                        <input type="date">
+                    </div>
+                </fieldset>
+
+                <div class="conteinerbtn">
+                    <button class="prev-step">Voltar</button>
+                    <button class="next-step">Continuar</button>
+                </div>
+            </section>
+            
+            <!-- Objetivo -->
+            <section class="step">
+                <h1>Objetivo</h1>
+
+                <fieldset>
+                    <textarea name="objetivo" id=""></textarea>                 
+                </fieldset>
+                
+                <div class="conteinerbtn">
+                    <button class="prev-step" >Voltar</button>
+                    <button class="next-step" type="submit">Finalizar</button>
+                </div>
+            </section>
+
+            <!-- Finalize -->
+            <section class="finishSV step">
+                
+                <div>
+                    <h1>Finalize seu CV</h1>
+                    <p>Revise e faça download.</p>
+                </div>
+                
+                <div>
+                    <button class="prev-step" >Voltar</button>
+                    <button class="download">Baixar</button>
+                </div>
+            </section>
+        </form>
+
+        <div id='conteinerCV'></div>
+
+    </main>
+
+    <script type="module" src="../../components/formGRD.js"></script>
+</body>
+</html>
