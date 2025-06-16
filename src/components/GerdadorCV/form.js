@@ -3,7 +3,7 @@ import { gerarCVHtml } from './templates/template1.js'
 
 const dados = {};
 
-const conteinerCV = document.getElementById('conteinerCV');
+// export const conteinerCV = document.getElementById('conteinerCV');
 conteinerCV.innerHTML = gerarCVHtml(dados);
 
 document.querySelector('form').addEventListener('submit', function(e) {
@@ -48,20 +48,11 @@ document.querySelectorAll('.prev-step').forEach(btn => {
 
 
 
-document.querySelector('.download').addEventListener('click', async function(e) {
+document.querySelector('.finalizar').addEventListener('click', function(e) {
     e.preventDefault();
-    
-    await new Promise(resolve => setTimeout(resolve, 100));
 
-    const opt = {
-        margin: 10,
-        filename: 'documento.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-    };
-
-    html2pdf().set(opt).from(conteinerCV).save();
-})
+    localStorage.setItem('dadosCV', JSON.stringify(dados));
+    window.location.href = './gerarCV.html';
+});
 
 

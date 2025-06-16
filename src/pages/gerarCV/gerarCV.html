@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Gerador</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../styles/grd.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body class="conteinerPrincipal">
+    <header>
+        <nav class="menu">
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <section class="title">
+                <h1>Tudo pronto!</h1>
+                <p>Revise seus dados abaixo e, se estiver tudo certo, clique em um dos botões para baixar, imprimir ou enviar seu currículo por e-mail.</p>
+            </section>
+
+            <section class="visualizaCV">
+                <div class="btnConteiner">
+                    <ul>
+                        <li class="btnList"><button class="download btn"><i class="icon fas fa-file-arrow-down"></i></button></li>
+                        <li class="btnList"><button class="download btn"><i class="icon fas fa-print"></i></button></li>
+                        <li class="btnList"><button class="download btn"><i class="icon fas fa-envelope"></i></button></li>
+                    </ul>
+                </div>
+
+                <div class="conteinerCV">
+                    <div id='conteinerCVdownload' ></div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+    <script type="module" src="../../components/GerdadorCV/donwload.js"></script>
+</body>
+</html>

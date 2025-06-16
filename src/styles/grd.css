@@ -8,28 +8,87 @@
 }
 
 
+/* ============ Pagina de Escolha de Template ============ */
+.corpoTemplate {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-
-
-
-/* ============ barra de progresso ============ */
-header {
-    position: fixed;
+    border: 1px solid black;
 }
 
+
+
+/* ============ Formulario, Barra de Progresso, Visuzalização Interativa CV============*/
+
+/* ============ barra de progresso ============ */
 .progresso {
     position: fixed;
     width: 15%;
     height: 100vh;
-    border: 1px solid black;
-
     background-color: #1A3D99;
 }
 
+.progresso {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    /* border: 1px solid red; */
+}
+
+.titleProgress {
+    color: #ffffff;
+    margin-left: 1em;
+}
+
+.linha {
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 1.44em;
+    height: 210px;
+    border: 2px dashed black;
+
+}
+
+.stepProgress {
+    display: flex;
+    padding: 0.6em;
+    align-items: center;
+}
+
+.stepNumber {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    border-radius: 50%;
+    background-color: #f0c78a;
+    box-shadow: 0 1px 10px #c98a30;
+    color: #00203b;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.8rem;
+    z-index: 1;
+}
+
+.stepInative {
+    background-color: #1A3D99;
+    color: white;
+    border: 2px solid white;
+    box-shadow: none;
+}
+
+.stepName {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
 
 
-/* ============ Formulario e Visuzalização Interativa CV============*/
-main {
+.corpoDados {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -53,7 +112,6 @@ section {
 
     background: white;
     border-radius: 10px;
-    /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
 }
 
 .active {
@@ -66,7 +124,7 @@ fieldset {
 }
 
 
-form h1 {
+h1 {
     font-size: clamp(2rem, 5vh, 6rem);
     color: #092347;
 
@@ -108,7 +166,7 @@ input:focus {
     margin: 1.4em 1em;
 }
 
-button {
+.button {
     font-family: "Nunito", sans-serif;
     font-size: 1.3em;
     text-decoration: none;
@@ -152,6 +210,7 @@ textarea:focus {
 }
 
 
+
 .finishSV{
     /* display: flex; */
 }
@@ -165,17 +224,110 @@ textarea:focus {
     color: #0F4C75;  
 
     margin-bottom: 2em;
+}
 
-} 
+.finishSV a {
+    background-color: #02818c;
+    border: 1px solid black;
+}
+
 
 #conteinerCV {
-    /* display: inline-block; */
     position: fixed;
     right: 0;
     margin-right: 3em;
     transform: scale(0.383);
     transform-origin: right;
 
-    border: 1px solid black;
+    /* border: 1px solid #02818c; */
+}
+
+
+
+/* ================= PAGINA DE DONWLOAD ================= */
+
+.conteinerPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteinerPrincipal header {
+    width: 100%;
+}
+
+.menu {
+    height: 4.4em;
+    padding: 2% 8%;
+
+    background-color: #F9FAFB;
+    /* border: 1px solid black; */
+}
+
+.conteinerPrincipal main {
+    width: 75vw;
+}
+
+
+.title {
+    margin: 1em 0;
+}
+
+.title h1 {
+    font-size: 36px;
+}
+
+.title p {
+    width: 60%;
+    font-weight: 100;
+    font-size: 1.1rem;
+    color: #092347;
+}
+
+
+.visualizaCV {
+    display: flex;
+    flex-direction: row;
+}
+
+.btnConteiner {
+
+}
+
+.btnList {
+    list-style-type: none;
+    padding: 0.2em;
+}
+
+.btn {
+    cursor: pointer;
+    list-style-type: none;
+    width: 3.2vw;
+    height: 3.2vw;
+    border-radius: 100%;
+    background-color: #ffffff;
+    border: 1px solid #002D6B;
+    transition: all 0.1s ease;
+}
+
+.btn:hover {
+    /* background-color: #1A4B94; */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 45, 107, 0.35);
+}
+
+.icon {
+    /* transform: scale(1); */
+    font-size: 1.3em;
+    color: #002D6B;
+}
+
+
+.conteinerCV {
+    margin: 0 0 5em 4em ;
+    box-shadow: 0 6px 16px rgba(0, 45, 107, 0.35);
+
+
+    /* border: 1px solid black; */
 }
 

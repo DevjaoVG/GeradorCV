@@ -5,15 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Gerador</title>
     <link rel="stylesheet" href="../../styles/grd.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
     <header>
         <div class="progresso">
+            <div>
+                <h4 class="titleProgress">Progresso</h4>
+            </div>
 
+            <div>
+                <div class="linha"></div>
+
+                <div class="stepProgress">
+                    <div class="stepNumber">1</div>
+                    <div class="stepName">cabeçalho do currículo</div>
+                </div>
+    
+                <div class="stepProgress">
+                    <div class="stepNumber stepInative">2</div>
+                    <div class="stepName">Histórico profissional</div>
+                </div>
+    
+                <div class="stepProgress">
+                    <div class="stepNumber stepInative">3</div>
+                    <div class="stepName">Formação acadêmica</div>
+                </div>
+    
+                <div class="stepProgress">
+                    <div class="stepNumber stepInative">4</div>
+                    <div class="stepName">Competências</div>
+                </div>
+    
+                <div class="stepProgress">
+                    <div class="stepNumber stepInative">5</div>
+                    <div class="stepName">Finalizar</div>
+                </div>
+            </div>
+            
         </div>
     </header>
-    <main>
+
+    <main class="corpoDados">
         <form action="" name="contato">
             <!-- Seção infomações de contato -->
             <section class="step active"> 
@@ -69,7 +101,7 @@
                 </fieldset>
 
                 <div class="conteinerbtn">
-                    <button class="next-step" >Continuar</button>
+                    <button class="button next-step" >Continuar</button>
                 </div>
             </section>
 
@@ -114,8 +146,8 @@
                 </fieldset>
 
                 <div class="conteinerbtn">
-                    <button class="prev-step" >Voltar</button>
-                    <button class="next-step" >Continuar</button>
+                    <button class="button prev-step" >Voltar</button>
+                    <button class="button next-step" >Continuar</button>
                 </div>
             </section>
 
@@ -160,8 +192,8 @@
                 </fieldset>
 
                 <div class="conteinerbtn">
-                    <button class="prev-step">Voltar</button>
-                    <button class="next-step">Continuar</button>
+                    <button class="button prev-step">Voltar</button>
+                    <button class="button next-step">Continuar</button>
                 </div>
             </section>
             
@@ -174,8 +206,8 @@
                 </fieldset>
                 
                 <div class="conteinerbtn">
-                    <button class="prev-step" >Voltar</button>
-                    <button class="next-step" type="submit">Finalizar</button>
+                    <button class="button prev-step" >Voltar</button>
+                    <button class="button next-step" type="submit">Continuar</button>
                 </div>
             </section>
 
@@ -188,16 +220,15 @@
                 </div>
                 
                 <div>
-                    <button class="prev-step" >Voltar</button>
-                    <button class="download">Baixar</button>
+                    <button class="button prev-step" >Voltar</button>
+                    <button class="button finalizar">Finaizar</button>
                 </div>
             </section>
         </form>
 
         <div id='conteinerCV'></div>
-
     </main>
 
-    <script type="module" src="../../components/formGRD.js"></script>
+    <script type="module" src="../../components/GerdadorCV/form.js"></script>
 </body>
 </html>

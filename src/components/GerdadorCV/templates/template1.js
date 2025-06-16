@@ -27,14 +27,18 @@ export function gerarCVHtml(dados = {}) {
     return `
     <style>
         .cvConteiner {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            padding: 20px;
-            background-color: #f9f9f9;
+            font-family: "Segoe UI", sans-serif;
+            font-size: 17px;
+            line-height: 1.5;
+            max-width: 780px;   /* Largura um pouco menor que a folha A4 considerando margem */
+            margin: 40px auto;     /* Centralizar horizontalmente */
+            padding: 10px;
+            background-color: #ffffff;
             // border: 1px solid black;
+            box-sizing: border-box;
+            word-wrap: break-word; /* Quebrar texto para evitar overflow */
         }
+
 
         .header {
             text-align: center;
@@ -56,10 +60,11 @@ export function gerarCVHtml(dados = {}) {
 
         .section {
             margin-bottom: 20px;
+            min-height: 150px;
         }
 
         .section h2 {
-            background-color: #3498db;
+            background-color: #1f4e79;
             color: white;
             padding: 5px 10px;
             font-size: 18px;
@@ -78,9 +83,9 @@ export function gerarCVHtml(dados = {}) {
         }
 
         .item .subtitle {
-            font-style: italic;
-            color: #7f8c8d;
-            margin: 5px 0;
+        font-style: italic;
+        color: #555;
+        font-weight: 500;
         }
 
         .item ul {
