@@ -1,120 +1,26 @@
-///Organização dos diretorios do projeto
-meu-site-vagas/
-├── backend/                     # Código do servidor
-│   ├── src/
-│   │   ├── config/              # Configurações globais (DB, auth, etc.)
-│   │   │   ├── database.js
-│   │   │   └── auth.js
-│   │   ├── controllers/         # Lógica das rotas
-│   │   │   ├── vagas.controller.js
-│   │   │   └── curriculos.controller.js
-│   │   ├── models/              # Modelos de dados
-│   │   │   ├── Vaga.js
-│   │   │   └── Curriculo.js
-│   │   ├── routes/              # Definição de rotas
-│   │   │   ├── vagas.routes.js
-│   │   │   └── api/
-│   │   │       └── jobs-externos.routes.js  # Rotas para APIs de vagas externas
-│   │   ├── services/            # Regras de negócio
-│   │   │   ├── vagas.service.js
-│   │   │   └── api/
-│   │   │       └── github-jobs.service.js   # Integração com API externa
-│   │   └── app.js               # Aplicação principal
-│   ├── tests/                   # Testes do backend
-│   └── package.json
-│
-├── frontend/                    # Aplicação web
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/              # Imagens, fonts, etc.
-│   │   ├── components/          # Componentes reutilizáveis
-│   │   │   ├── vagas/
-│   │   │   │   ├── VagaCard.jsx
-│   │   │   │   └── Filters.jsx
-│   │   │   └── curriculos/
-│   │   │       ├── FormCurriculo.jsx
-│   │   │       └── Preview.jsx
-│   │   ├── pages/               # Páginas completas
-│   │   │   ├── VagasPage.jsx
-│   │   │   ├── CurriculoPage.jsx
-│   │   │   └── Admin/
-│   │   │       └── Dashboard.jsx
-│   │   ├── hooks/               # Custom hooks
-│   │   │   └── useJobsAPI.js    # Hook para buscar vagas externas
-│   │   ├── context/             # Contextos do React
-│   │   ├── services/            # Chamadas à API
-│   │   │   ├── api.js           # Config Axios
-│   │   │   ├── vagas.service.js
-│   │   │   └── jobsAPI.service.js # Serviço para APIs externas
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── tests/
-│   └── package.json
-│
-├── docs/                        # Documentação
-│   ├── api.md                   # Docs da API
-│   └── integracoes.md           # Como adicionar novas APIs
-│
-├── scripts/                     # Scripts úteis
-│   ├── deploy.sh
-│   └── sync-jobs.sh             # Script para sincronizar vagas externas
-│
-└── README.md
-
-
-////Roadmap de Desenvolvimento
-Fase 1 (MVP - 1 meses):
-
-Cadastro/login básico
-
-CRUD de currículos e vagas
-
-Busca simples
-
-Fase 2 (1-2_ meses):
-
-Integração com LinkedIn
-
-Sistema de matches (vagas ↔ candidatos)
-
-Painel analítico para empresas
-
-Fase 3 (contínuo):
-
-Chat integrado
-
-Testes técnicos online
-
-AI para sugestões de vagas
-
-
-
-
-
-///RASCUNHOS
-meu-projeto/
-├── public/                  # Arquivos estáticos acessíveis publicamente
-│   ├── favicon.ico          # Ícone do site
-│   ├── robots.txt           # Instruções para buscadores
-│   └── images/              # Imagens globais (logo, favicon, etc.)
-│
-├── src/                     # Código-fonte principal
-│   ├── assets/              # Recursos estáticos
-│   │   ├── fonts/           # Fontes customizadas
-│   │   ├── icons/           # Ícones SVG
-│   │   └── illustrations/   # Ilustrações específicas
-│   │
-│   ├── components/          # Componentes reutilizáveis
-│   ├── pages/               # Páginas/rotas (se for SPA)
-│   ├── styles/              # Arquivos de estilização global
-│   │   ├── base/            # Reset CSS, variáveis, mixins
-│   │   ├── components/      # Estilos por componente
-│   │   └── main.scss        # Arquivo principal de estilos
-│   │
-│   ├── utils/               # Funções/helpers utilitários
-│   ├── services/            # Lógica de API/services
-│   └── index.html           # Página principal (se for SPA)
-│
-├── docs/                    # Documentação do projeto
-├── tests/                   # Testes automatizados
-└── README.md                # Documentação básica
+GeradorCV/
+├── docs/                             # Documentação futura (a ser adicionada)
+├── src/
+│   ├── assets/
+│   │   └── illustrations/            # Imagens e ilustrações utilizadas no projeto
+│   │       ├── ilustracao01.jpeg
+│   │       ├── ilustracao02.jpeg
+│   │       └── logo.jpeg
+│   ├── components/
+│   │   └── GeradorCV/
+│   │       ├── templates/            # Templates de currículo (estruturas em JS)
+│   │       │   ├── template1.js
+│   │       │   ├── template2.js
+│   │       ├── download.js           # Lógica de exportação do currículo
+│   │       ├── escolhaTemplate.js    # Lógica para seleção de templates
+│   │       └── form.js               # Lógica do formulário multistep
+│   ├── pages/
+│   │   └── gerarCV/
+│   │       ├── coletarDados.html     # Página de entrada de dados
+│   │       ├── escolhaTemplate.html  # Página de escolha de template
+│   │       └── gerarCV.html          # Página de visualização/finalização do CV
+│   ├── styles/
+│   │   ├── grd.css                   # Estilos globais do gerador
+│   │   └── home.css                  # Estilo da página inicial
+├── index.html                        # Página inicial da aplicação
+└── README.md                         # Documentação do projeto
