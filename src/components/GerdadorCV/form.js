@@ -1,6 +1,9 @@
 import { gerarCVHtml } from './templates/template1.js'
 
 
+// VISUALIZAÇÃO DO CV
+
+// colocando ele na tela
 const dados = {};
 conteinerCV.innerHTML = gerarCVHtml(dados);
 
@@ -15,6 +18,24 @@ document.querySelector('form').addEventListener('submit', function(e) {
     conteinerCV.innerHTML = gerarCVHtml(dados);
 });
 
+
+// EXPANZAO DO CV PRA VISUALIZAR
+// botao
+// const fundoDesfoque = document.querySelector('.corpoTemplate');
+// const bntVisuCV = document.querySelector('.btnCV').addEventListener('click', function(e) {
+//     e.preventDefault();
+
+//     conteinerCV.classList.toggle('conteinerCVExpandido');
+//     // fundoDesfoque.classList.toggle('fundoDesfoqueActive');
+// });
+
+// CV
+const conteinerVisuCv = document.querySelector('#conteinerCV').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    conteinerCV.classList.toggle('conteinerCVExpandido');
+    // fundoDesfoque.classList.toggle('fundoDesfoqueActive');
+});
 
 
 const stepsProgress = document.querySelectorAll('.stepNumber')
