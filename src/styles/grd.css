@@ -8,18 +8,105 @@
 }
 
 
-/* ============ Pagina de Escolha de Template ============ */
-.corpoTemplate {
+
+/* //////////////////// Pagina 'HOME' - Tres passos para Criar CV//////////////////// */
+
+.conteinerComecado {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.conteinerTresPassos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 33%;
+    margin-left: 5em;
+
+    /* border: 1px solid black; */
+}
+
+.conteinerTresPassos h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5em;
+}
+
+.conteinerPassos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    padding: 0.7em 0;
+
+    /* border: 1px solid black; */
+}
+
+.conteinerPassos h2 {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    padding: 0.2em 0.4em;
+    max-height: 3vw;
+    border-radius: 10px 0px 10px 0px;
+    color: #0A2647;
 
-    border: 1px solid black;
+    background-color: #F4D03F;
+}
+
+.conteinerPassos p {
+    display: flex;
+    align-items: center;
+    color: #1C3C67;
+    font-size: 1.3em;
+    font-weight: 500;
+    max-width: 70%;
+}
+
+.conteinerImg {
+    flex: 1;
+    max-width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    /* border: 1px solid black; */
+
+}
+
+.conteinerImg img {
+    max-width: 45%;
+}
+
+.conteinerButton {
+    display: flex;
+    justify-content: center;
+}
+
+.conteinerButton a {
+    padding: 0.5em 5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #fff;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 8px;
+}
+
+.conteinerButton a:hover {
+    box-shadow: 0px 1px 4px #002d6b;
+    transform: translateY(-1px);
+}
+
+.conteinerButton a:active {
+    box-shadow: none;
+    transform: translateY(0px);
 }
 
 
 
-/* ============ Formulario, Barra de Progresso, Visuzalização Interativa CV============*/
+/* //////////////////// Formulario, Barra de Progresso, Visuzalização Interativa CV //////////////////// */
 
 /* ============ barra de progresso ============ */
 .progresso {
@@ -83,6 +170,7 @@
 }
 
 
+/* ========== Formulario ========== */
 
 .corpoDados {
     display: flex;
@@ -97,7 +185,7 @@ form {
     margin-left: 15rem;
 }
 
-section {
+.crieSeuCV {
     margin-top: 2.8em;
 }
 
@@ -261,18 +349,6 @@ textarea:focus {
     transform-origin: right;
 }
 
-/* .btnCV {
-    width: 20vw;
-    height: 10vh;
-    font-size: 2.5em;
-    border-radius: 1em;
-    cursor: pointer;
-} */
-
-/* .btnCV:hover {
-    border: 1px solid red;
-} */
-
 
 #conteinerCV {
     margin: 1.4em 0;
@@ -290,19 +366,6 @@ textarea:focus {
     transform:translate(-100vw, -0%) scale(1.5) scaleX(1.2);
 }
 
-/* .fundoDesfoque {
-    opacity: 0;
-}
-
-.fundoDesfoqueActive {
-    position: fixed;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    width: 100vw;
-    height: 100vh;
-    background-color: red;
-} */
 
 
 

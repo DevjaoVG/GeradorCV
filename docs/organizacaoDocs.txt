@@ -24,3 +24,13 @@ GeradorCV/
 │   │   └── home.css                  # Estilo da página inicial
 ├── index.html                        # Página inicial da aplicação
 └── README.md                         # Documentação do projeto
+
+
+------------------------------------------------------------------------
+
+Sobre a navegação do site e suas respectivas paginas/arquivos organizado 
+por ortem.
+
+PAGINA - Criar seu Curriculo:
+
+--Arquivo: 

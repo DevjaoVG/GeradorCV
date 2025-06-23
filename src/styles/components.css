@@ -1,0 +1,41 @@
+/* ====== MENU ====== */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 7%;
+    background-color: #F9FAFB;
+
+    border-bottom: 0.1px solid #ccc;
+}
+
+.menu a {
+    margin: 20px;
+    color: #1E3A8A;
+    font-size: clamp(0.9rem, 2.5vh, 4rem);
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.menu a:hover {
+    color: #1A73E8; 
+    text-decoration-color: #1A73E8;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    transform: translateY(-1px);
+}
+
+
+
+/* ====== RODAPE ====== */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    color: #F9FAFB;
+    background-color: #0A2647;
+    font-weight: 600;
+    /* border: 1px solid black; */
+}
